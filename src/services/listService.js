@@ -5,17 +5,20 @@
 export const getListData = () => [
   {
     id: "id1",
-    title: "Lorem ipsum",
-    content: "Lorem ipsum dolor sit amet",
+    title: "Evan Rocheford",
+    content: "Co-founder & CEO",
+    email: "evan@nutramaize.com",
   },
   {
     id: "id2",
-    title: "Lorem ipsum",
-    content: "Lorem ipsum dolor sit amet",
+    title: "Torbert Rocheford",
+    content: "Co-founder & CTO",
+    email: "trochefo@purdue.edu",
   },
   {
     id: "id3",
-    title: "Lorem ipsum",
-    content: "Lorem ipsum dolor sit amet",
+    title: "Tyler",
+    content: "R&D Manager",
+    email: "tyler@nutramaize.com",
   },
 ];

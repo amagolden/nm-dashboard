@@ -24,7 +24,7 @@ export default class ChartWidget extends BaseWidget {
     return (
       <div>
         <DataPie24Regular />
-        <Text>Your chart</Text>
+        <Text>Crop Production</Text>
         <Button icon={<MoreHorizontal32Regular />} appearance="transparent" />
       </div>
     );

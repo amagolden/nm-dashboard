@@ -15,7 +15,7 @@ export default class ListWidget extends BaseWidget {
     return (
       <div>
         <List28Filled />
-        <Text>Your List</Text>
+        <Text>NutraMaize Team</Text>
         <Button icon={<MoreHorizontal32Regular />} appearance="transparent" />
       </div>
     );
@@ -30,6 +30,7 @@ export default class ListWidget extends BaseWidget {
               <div className="divider" />
               <Text className="title">{t.title}</Text>
               <Text className="content">{t.content}</Text>
+              <Text className="content">{t.email}</Text>
             </div>
           );
         })}
