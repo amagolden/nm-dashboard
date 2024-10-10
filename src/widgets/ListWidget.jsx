@@ -41,4 +41,5 @@ export default class ListWidget extends BaseWidget {
   footer() {
     return <Button appearance="primary">View Details</Button>;
   }
+  
 }
