@@ -3,18 +3,18 @@ import "../styles/ListWidget.css";
 import { Button, Text } from "@fluentui/react-components";
 import { List28Filled, MoreHorizontal32Regular } from "@fluentui/react-icons";
 import { BaseWidget } from "@microsoft/teamsfx-react";
-import { getAuthData } from "../services/authService";
+import { fetchUserDataWithSSO } from "../services/sampleAuthService";
 
-export default class AuthWidget extends BaseWidget {
+export default class SampleAuthWidget extends BaseWidget {
   async getData() {
-    return { data: getAuthData() };
+    return { data: await fetchUserDataWithSSO() };
   }
 
   header() {
     return (
       <div>
         <List28Filled />
-        <Text>Sample</Text>
+        <Text>Sample Auth</Text>
         <Button icon={<MoreHorizontal32Regular />} appearance="transparent" />
       </div>
     );
@@ -23,7 +23,7 @@ export default class AuthWidget extends BaseWidget {
   body() {
     return (
         <div>
-            <Text className="content">{this.state.data?.content}</Text>
+            <Text className="content">{this.state.data?.id}</Text>
         </div>
     );
   }

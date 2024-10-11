@@ -3,7 +3,7 @@ import { BaseDashboard } from "@microsoft/teamsfx-react";
 import ChartWidget from "../widgets/ChartWidget";
 import ListWidget from "../widgets/ListWidget";
 import SampleWidget from "../widgets/SampleWidget";
-import AuthWidget from "../widgets/AuthWidget";
+import SampleAuthWidget from "../widgets/SampleAuthWidget";
 
 export default class SampleDashboard extends BaseDashboard {
   layout() {
@@ -12,7 +12,7 @@ export default class SampleDashboard extends BaseDashboard {
         <ListWidget />
         <ChartWidget />
         <SampleWidget />
-        <AuthWidget />
+        <SampleAuthWidget />
       </>
     );
   }
