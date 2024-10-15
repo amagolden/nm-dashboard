@@ -18,7 +18,7 @@
         {
             "name": "Launch Remote in Teams (Chrome)",
             "type": "pwa-chrome",
-            "request": "attach",
+            "request": "launch",
             "url": "https://teams.microsoft.com/l/app/${{TEAMS_APP_ID}}?installAppPackage=true&webjoin=true&${account-hint}",
             "presentation": {
                 "group": "group 1: Teams",
