@@ -23,7 +23,7 @@ export default class SampleAuthWidget extends BaseWidget {
   body() {
     return (
         <div>
-            <Text className="content">{this.state.data?.id}</Text>
+            <Text className="content">{this.state.data?.content}</Text>
         </div>
     );
   }

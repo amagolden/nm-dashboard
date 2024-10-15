@@ -1,6 +1,7 @@
 {
     "version": "0.2.0",
     "configurations": [
+
         {
             "command": "npm start",
             "name": "Run npm start",
@@ -17,7 +18,7 @@
         {
             "name": "Launch Remote in Teams (Chrome)",
             "type": "pwa-chrome",
-            "request": "launch",
+            "request": "attach",
             "url": "https://teams.microsoft.com/l/app/${{TEAMS_APP_ID}}?installAppPackage=true&webjoin=true&${account-hint}",
             "presentation": {
                 "group": "group 1: Teams",
