@@ -36,7 +36,12 @@
           "type": "User",
           "userConsentDescription": "Enable Teams to call this app's web APIs with the same rights that you have",
           "userConsentDisplayName": "Teams can access app's web APIs and make requests on your behalf",
-          "value": "access_as_user"
+          "value": "access_as_user",
+          "permission": "identity",
+          "scopes": [
+            "User.Read",
+            "User.Read.All"
+        ]
         }
     ],
     "preAuthorizedApplications": [
