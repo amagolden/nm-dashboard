@@ -16,21 +16,6 @@
         ],
         "saml2Token": []
     },
-    "requiredResourceAccess": [
-      {
-        "resourceAppId": "00000003-0000-0000-c000-000000000000",  
-        "resourceAccess": [
-          {
-            "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",  
-            "type": "Scope"
-          }
-        ]
-      }
-    ],
-    "webApplicationInfo": {
-      "id": "${{AAD_APP_CLIENT_ID}}",
-      "resource": "https://graph.microsoft.com"
-    },
      "oauth2Permissions": [
         {
           "adminConsentDescription": "Allows Teams to call the app's web APIs as the current user.",
@@ -43,8 +28,8 @@
           "value": "access_as_user"
         }
     ],
-    "preAuthorizedApplications": [
-        {
+    "preAuthorizedApplications": [ 
+      {
             "appId": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
             "permissionIds": 
             ["${{AAD_APP_ACCESS_AS_USER_PERMISSION_ID}}"]
@@ -84,6 +69,17 @@
             "permissionIds": 
             ["${{AAD_APP_ACCESS_AS_USER_PERMISSION_ID}}"]
         }
+    ],
+    "requiredResourceAccess": [
+      {
+        "resourceAppId": "00000003-0000-0000-c000-000000000000",  
+        "resourceAccess": [
+          {
+            "id": "498476ce-e0fe-48b0-b801-37ba7e2685c6",  
+            "type": "Scope"
+          }
+        ]
+      }
     ],
     "identifierUris": 
     ["api://${{TAB_DOMAIN}}/${{AAD_APP_CLIENT_ID}}"],

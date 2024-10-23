@@ -4,11 +4,17 @@ export const getAuthTokenWithSSO = async () => {
   
   try {
     // Initialize the Teams SDK before using any of its features
+    console.log("initializing SDK...");
     await app.initialize();
-    
-    const token = await authentication.getAuthToken({
-      resources: ["https://graph.microsoft.com"], // Requesting Microsoft Graph permissions
-    });
+    console.log("initialized!");
+
+    const tokenRequest = {
+      scopes: ["User.Read"], 
+    };
+
+    console.log("requesting token from Graph", tokenRequest);
+
+    const token = await authentication.getAuthToken(tokenRequest);
 
     if (!token) {
       throw new Error("Token acquisition failed");

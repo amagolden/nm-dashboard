@@ -22,6 +22,8 @@
             var clientId = currentURL.searchParams.get("clientId");
             var scope = currentURL.searchParams.get("scope");
             var loginHint = currentURL.searchParams.get("loginHint");
+            
+            console.log(currentURL, clientID, scope);
 
             const msalConfig = {
               auth: {
@@ -40,6 +42,7 @@
               redirectUri: window.location.origin + `/auth-end.html?clientId=${clientId}`,
               loginHint: loginHint
             };
+            console.log("Requested scopes:", scopesRequest);
             await msalInstance.loginRedirect(scopesRequest);
           });
         });
