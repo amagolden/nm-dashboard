@@ -1,12 +1,12 @@
 import { Client } from "@microsoft/microsoft-graph-client";
 import "isomorphic-fetch"; // Ensure fetch is available in all environments
-import { getAuthTokenWithSSO } from '../internal/auth';
+import { getAuthTokenSDK } from '../internal/auth';
 
 export const fetchUserDataWithSSO = async () => {
   
   try {
     // Get the SSO token
-    const token = await getAuthTokenWithSSO();
+    const token = await getAuthTokenSDK();
 
     if (!token) {
       throw new Error("Token not acquired. Unable to fetch user data.");

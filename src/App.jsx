@@ -23,6 +23,7 @@ import TermsOfUse from "./TermsOfUse";
  */
 export default function App() {
   const { loading, themeString } = useTeams()[0];
+
   return (
     <TeamsFxContext.Provider value={{ themeString }}>
       <FluentProvider
