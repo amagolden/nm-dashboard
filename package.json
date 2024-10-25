@@ -7,6 +7,7 @@
     "private": true,
     "dependencies": {
         "@azure/msal-browser": "^3.26.1",
+        "@azure/msal-react": "^2.1.1",
         "@fluentui/react-charting": "^5.14.10",
         "@fluentui/react-components": "^9.18.0",
         "@fluentui/react-icons": "^2.0.186",
@@ -15,9 +16,11 @@
         "@microsoft/teams-js": "^2.29.0",
         "@microsoft/teamsfx": "^2.3.2",
         "@microsoft/teamsfx-react": "^3.0.0",
+        "bootstrap": "^5.3.3",
         "isomorphic-fetch": "^3.0.0",
         "node-fetch": "^3.3.2",
         "react": "^18.2.0",
+        "react-bootstrap": "^2.10.5",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.8.0",
         "react-scripts": "^5.0.1"
