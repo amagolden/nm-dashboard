@@ -11,11 +11,11 @@ import {
 } from "@fluentui/react-components";
 import { useTeams } from "@microsoft/teamsfx-react";
 
-import SampleDashboard from "./dashboards/SampleDashboard";
-import { TeamsFxContext } from "./internal/context";
-import Privacy from "./Privacy";
-import TabConfig from "./TabConfig";
-import TermsOfUse from "./TermsOfUse";
+import SampleDashboard from "./frontend/dashboards/SampleDashboard";
+import { TeamsFxContext } from "./frontend/internal/context";
+import Privacy from "./frontend/Privacy";
+import TabConfig from "./frontend/TabConfig";
+import TermsOfUse from "./frontend/TermsOfUse";
 
 /**
  * The main app which handles the initialization and routing

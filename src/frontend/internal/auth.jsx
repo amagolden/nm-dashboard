@@ -1,4 +1,4 @@
-import { PublicClientApplication } from '@azure/msal-browser';
+/*import { PublicClientApplication } from '@azure/msal-browser';
 import { app, authentication } from "@microsoft/teams-js";
 
 export const getAuthTokenSDK = async () => {
@@ -27,7 +27,7 @@ export const getAuthTokenSDK = async () => {
     console.error('Error initializing Teams SDK or getting token:', error);
     return null;
   }
-};
+};*/
 
 /*const SDKtoken = await getAuthTokenSDK();
 
@@ -43,7 +43,7 @@ if (SDKtoken) {
   console.log('Access token from OBO flow:', data.accessToken);
 }*/
 
-export const getAuthToken = async (SDKtoken) => {
+/*export const getAuthToken = async (SDKtoken) => {
   
   const msalInstance = new PublicClientApplication({
     auth: {
@@ -93,7 +93,7 @@ export const getAuthTokenSSO = async () => {
     return null;
   }
 
-};
+};*/
 
 /*import { Providers, ProviderState } from "@microsoft/mgt-react";
 import { TeamsFxProvider } from "@microsoft/mgt-teamsfx-provider";
@@ -131,7 +131,7 @@ export const getAuthTokenWithSSO = async () => {
     }
 };*/
 
-/*import { authentication, app } from "@microsoft/teams-js";
+import { authentication, app } from "@microsoft/teams-js";
 
 export const getAuthTokenWithSSO = async () => {
   
@@ -167,5 +167,5 @@ export const getAuthTokenWithSSO = async () => {
     console.error("Error acquiring SSO token", error);
     return null; // Return null if token acquisition fails
   }
-};*/
+};
 

@@ -14,7 +14,7 @@ import { ProfileData } from '../ProfileData';
 
 import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from '@azure/msal-react';
 
-import '../App.css';
+import '../../App.css';
 
 import Button from 'react-bootstrap/Button';
 
