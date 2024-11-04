@@ -2,26 +2,19 @@ import { BaseDashboard } from "@microsoft/teamsfx-react";
 
 import ChartWidget from "../widgets/ChartWidget";
 import ListWidget from "../widgets/ListWidget";
-import SampleWidget from "../widgets/SampleWidget";
-import SampleAuthWidget from "../widgets/SampleAuthWidget";
+import DateWidget from "../widgets/DateWidget";
+import SeedWidget from "../widgets/SeedWidget";
 
 import React, { useState } from 'react';
 
 import { PageLayout } from '../PageLayout';
-import { loginRequest } from '../internal/authConfig';
-import { callMsGraph } from '../services/graph';
-import { ProfileData } from '../ProfileData';
 
-import { AuthenticatedTemplate, UnauthenticatedTemplate, useMsal } from '@azure/msal-react';
-
-import '../../App.css';
-
-import Button from 'react-bootstrap/Button';
+import '../App.css';
 
   /**
 * Renders information about the signed-in user or a button to retrieve data about the user
 */
-  function ProfileContent() {
+  /*function ProfileContent() {
     const { instance, accounts } = useMsal();
     const [graphData, setGraphData] = useState(null);
 
@@ -39,9 +32,9 @@ import Button from 'react-bootstrap/Button';
       }
   };
 
-    return (
+   return (
       <>
-          <h5 className="card-title">Welcome {accounts[0]?.name || "User"}</h5> {/* Fallback to "User" if name is undefined */}
+          <h5 className="card-title">Welcome {accounts[0]?.name || "User"}</h5>
           <br/>
           {graphData ? (
               <ProfileData graphData={graphData} />
@@ -52,18 +45,17 @@ import Button from 'react-bootstrap/Button';
           )}
       </>
     )
-  }
+  }*/
 
   export default class SampleDashboard extends BaseDashboard {
     layout() {
       return (
         <>
           <PageLayout />
-          <ListWidget />
+          <DateWidget />
           <ChartWidget />
-          <SampleWidget />
-          <SampleAuthWidget />
-          <ProfileContent />
+          <ListWidget />
+          <SeedWidget />
         </>
       );
     }

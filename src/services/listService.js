@@ -17,8 +17,14 @@ export const getListData = () => [
   },
   {
     id: "id3",
-    title: "Tyler",
+    title: "Tyler Lawson",
     content: "R&D Manager",
     email: "tyler@nutramaize.com",
+  },
+  {
+    id: "id4",
+    title: "Angela Goldenstein",
+    content: "Fractional COO",
+    email: "angela@nutramaize.com",
   },
 ];

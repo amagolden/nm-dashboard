@@ -4,18 +4,18 @@ import { Button, Text } from "@fluentui/react-components";
 import { List28Filled, MoreHorizontal32Regular } from "@fluentui/react-icons";
 import { BaseWidget } from "@microsoft/teamsfx-react";
 
-import { getListData } from "../services/listService";
+import { getDateData } from "../services/dateService";
 
-export default class ListWidget extends BaseWidget {
+export default class DateWidget extends BaseWidget {
   async getData() {
-    return { data: getListData() };
+    return { data: getDateData() };
   }
 
   header() {
     return (
       <div>
         <List28Filled />
-        <Text>NutraMaize Team</Text>
+        <Text>Key Timeline</Text>
         <Button icon={<MoreHorizontal32Regular />} appearance="transparent" />
       </div>
     );
@@ -28,18 +28,12 @@ export default class ListWidget extends BaseWidget {
           return (
             <div key={`${t.id}-div`}>
               <div className="divider" />
-              <Text className="title">{t.title}</Text>
-              <Text className="content">{t.content}</Text>
-              <Text className="content">{t.email}</Text>
+              <Text className="title">{t.date}</Text>
+              <Text className="content">{t.detail}</Text>
             </div>
           );
         })}
       </div>
     );
   }
-
-  footer() {
-    return <Button appearance="primary">View Details</Button>;
-  }
-  
 }
